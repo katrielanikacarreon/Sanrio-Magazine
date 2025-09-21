@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sanrio Characters</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Sniglet&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: "Sniglet", cursive;
+      background-color: #fff0f5;
+      color: #333;
+    }
+
+    /* Navigation */
+    nav {
+      background: #ffb6c1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 12px 0;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      box-shadow: 0 4px 8px rgba(255, 105, 180, 0.2);
+    }
+
+    nav img {
+      height: 45px;
+      margin-right: 20px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 8px 14px;
+      border-radius: 20px;
+      transition: background 0.3s ease;
+      background-color: #ff69b4;
+      font-family: "Fredoka One", cursive;
+    }
+
+    nav ul li a:hover {
+      background-color: #ff1493;
+    }
+
+    /* Cute Header Section */
+    .cute-header {
+      text-align: center;
+      background-color: #ffe4ec;
+      padding: 25px 20px;
+      border-bottom: 5px dotted #ffb6c1;
+      margin: 90px auto 30px auto; 
+      width: 90%;
+      border-radius: 20px;
+    }
+
+    .cute-header img {
+      height: 70px;
+      vertical-align: middle;
+      margin-right: 12px;
+    }
+
+    .cute-header h1 {
+      display: inline-block;
+      font-size: 32px;
+      color: #ff1493;
+      font-family: "Fredoka One", cursive;
+      vertical-align: middle;
+    }
+
+    /* Character Cards */
+    .characters {
+      padding: 40px 20px;
+      width: 90%;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+    }
+
+    .character-card {
+      background: #ffe4ec;
+      border: 3px dotted #ffb6c1;
+      border-radius: 25px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .character-card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 10px 20px rgba(255, 105, 180, 0.3);
+    }
+
+    .character-card img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 20px;
+      border: 5px solid #fff;
+      box-shadow: 0 5px 12px rgba(255, 105, 180, 0.25);
+      margin-bottom: 15px;
+    }
+
+    .character-card h2 {
+      font-family: "Fredoka One", cursive;
+      color: #ff1493;
+      margin-bottom: 12px;
+      font-size: 24px;
+    }
+
+    .character-card p {
+      font-size: 18px; /* larger font */
+      line-height: 1.7;
+      color: #444;
+      padding: 0 10px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #ffb6c1;
+      color: #fff;
+      text-align: center;
+      padding: 18px;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <img src="https://static.wikia.nocookie.net/hellokitty/images/f/f6/Sanrio_logo.png/revision/latest?cb=20230707124943" alt="Sanrio Logo">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About the Author</a></li>
+      <li><a href="characters.html">Characters</a></li>
+      <li><a href="adventures.html">Adventures</a></li>
+      <li><a href="story.html">Story</a></li>
+    </ul>
+  </nav>
+
+  <!-- Cute Header -->
+  <section class="cute-header" style="margin-top:100px;">
+    <img src="https://www.clipartmax.com/png/full/126-1261994_hello-kitty-png-icon-hello-kitty-png-icons.png" alt="Hello Kitty Icon">
+    <h1>Meet the Sanrio Characters</h1>
+  </section>
+
+  <!-- Characters Grid -->
+  <section class="characters">
+    <div class="character-card">
+      <img src="https://i.pinimg.com/736x/e1/69/a5/e169a5402ccba8ab1e1da2b7f4583f5c.jpg" alt="Hello Kitty">
+      <h2>Hello Kitty</h2>
+      <p>Type: Anthropomorphic cat-girl (officially a little girl). Created in 1974, she wears a red bow and lives in London. Known for her kindness and iconic lack of a mouth so people can project their own feelings onto her.</p>
+    </div>
+
+    <div class="character-card">
+      <img src="https://i.pinimg.com/736x/a4/8c/cd/a48ccdcf74853f9437bdbf8c43947c15.jpg" alt="My Melody">
+      <h2>My Melody</h2>
+      <p>Type: Rabbit. Debuted in 1975, she wears a pink (or red) hood. She’s sweet, kind, and loves baking. Best friends with Hello Kitty.</p>
+    </div>
+
+    <div class="character-card">
+      <img src="https://i.pinimg.com/736x/ff/af/a9/ffafa9d340b28e9f5bcb3a7a949c4336.jpg" alt="Kuromi">
+      <h2>Kuromi</h2>
+      <p>Type: Rabbit. Rebellious and mischievous, but with a softer side. Wears a black jester’s hat with a pink skull. Born on Halloween (Oct 31).</p>
+    </div>
+
+    <div class="character-card">
+      <img src="https://i.pinimg.com/736x/61/37/83/61378350e1ad18622f35518c4343fffb.jpg" alt="Cinnamoroll">
+      <h2>Cinnamoroll</h2>
+      <p>Type: Puppy. Born March 6, 2002 on a cloud. With big ears that let him fly and a cinnamon roll-like tail, he’s gentle and very cute.</p>
+    </div>
+
+    <div class="character-card">
+      <img src="https://i.pinimg.com/1200x/6e/1f/2b/6e1f2bb3ee7477e2336a00ef3fb71e07.jpg" alt="Little Twin Stars">
+      <h2>Little Twin Stars</h2>
+      <p>Type: Twin angels. Kiki and Lala were born on December 24 and are often seen in pastel celestial settings.</p>
+    </div>
+
+    <div class="character-card">
+      <img src="https://i.pinimg.com/736x/96/c4/ad/96c4adb470fe4483aac8977e01181853.jpg" alt="Kerropi">
+      <h2>Keroppi</h2>
+      <p>Type: Frog. Lives at Donut Pond, adventurous and cheerful. Has siblings and many friends like Koroppi and Pikki.</p>
+    </div>
+
+    <div class="character-card">
+      <img src="https://i.pinimg.com/736x/97/7d/31/977d31ccfbb0a1ff0bbf49f9f546b612.jpg" alt="Pompompurin">
+      <h2>Pompompurin</h2>
+      <p>Type: Golden Retriever. Introduced in 1996, he wears a brown beret and loves pudding. Relaxed, friendly, and lovable.</p>
+    </div>
+
+    <div class="character-card">
+      <img src="https://i.pinimg.com/1200x/5d/81/ca/5d81ca3506095dce1f58c4709aaa270f.jpg" alt="Pochacco">
+      <h2>Pochacco</h2>
+      <p>Type: Dog. Energetic and sporty, he’s often shown in active outfits and loves playing games with friends.</p>
+    </div>
+
+    <div class="character-card">
+      <img src="https://i.pinimg.com/474x/2d/50/2c/2d502c8dde61a4a55b96af19f8063c6e.jpg" alt="Badtz-Maru">
+      <h2>Badtz-Maru</h2>
+      <p>Type: Penguin. A bit sassy and mischievous with a rebellious streak. Born April 1, he’s cheeky but lovable.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    Sanrio Magazine | Created by Katriel
+  </footer>
+</body>
+</html>
